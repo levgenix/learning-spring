@@ -3,9 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="musicBean" class="ru.itsinfo.RockMusic"/>
+    <bean id="musicBean" class="ru.itsinfo.ClassicalMisic"/>
 
     <bean id="playerBean" class="ru.itsinfo.MusicPlayer">
         <property name="music" ref="musicBean"/>
+
+        <property name="name" value="Levgenix player"/>
+        <property name="volume" value="50"/>
     </bean>
 </beans>
