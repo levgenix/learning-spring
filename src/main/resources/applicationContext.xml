@@ -6,6 +6,6 @@
     <bean id="musicBean" class="ru.itsinfo.RockMusic"/>
 
     <bean id="playerBean" class="ru.itsinfo.MusicPlayer">
-        <constructor-arg ref="musicBean"/>
+        <property name="music" ref="musicBean"/>
     </bean>
 </beans>
